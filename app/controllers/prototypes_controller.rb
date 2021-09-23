@@ -26,7 +26,7 @@ class PrototypesController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @prototype.comments.includes(:user)
-   # @user = user.prototype(params[:id]) 該当のプロトタイプに紐づくユーザー
+    #@user = User.prototype.find(params[:id]) 該当のプロトタイプに紐づくユーザー
   end 
 
   def edit
